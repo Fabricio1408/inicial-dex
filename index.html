@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2d6ecfbd70.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./cod.js"></script>
+    <title>Inicial Dex</title>
+    <link rel="icon" href="./img/title.png" type="image/x-icon">
+</head>
+
+<body>
+
+
+
+    <header class="topo">
+        <div class="logo">
+            <a href="./index.html"><img src="./img/logosite.png" alt="logosite" style="width: 160px"></a>
+            <ul >
+                <li><a href="#">Início</a></li>
+                <li>
+                    <a id="s20" >Gerações▾</a>
+                    <ul class="dropdown">
+                        <li><a href="#1ª Geração" style="color: #f12711;">1ª Geração</a></li>
+                        <li><a href="#2ª Geração" style="color: #8ef519;">2ª Geração</a></li>
+                        <li><a href="#3ª Geração" style="color: #00b4db;">3ª Geração</a></li>
+                        <li><a href="#4ª Geração" style="color: #f5af19;">4ª Geração</a></li>
+                        <li><a href="#5ª Geração" style="color: #ff00ff;">5ª Geração</a></li>
+                        <li><a href="#6ª Geração" style="color: #1d8d36;">6ª Geração</a></li>
+                        <li><a href="#7ª Geração" style="color: #0501ff;">7ª Geração</a></li>
+                        <li><a href="#8ª Geração" style="color: #00f7ff;">8ª Geração</a></li>
+                        <li><a href="#9ª Geração" style="color: #00ff00;">9ª Geração</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="pikachu">
+            <a href="#"><img style="margin-right: 10px;" src="./img/pikachu-running-110-80.gif" alt="mylogo"></a>
+        </div>
+
+    </header>
+
+    <aside class="titulo">
+        <h1>Pokémons iniciais de cada geração</h1>
+    </aside>
+
+    <img id="modeToggle" src="./img/dark.png" alt="Modo Noturno" onclick="toggleDarkMode()">
+
+    <div id="modal" class="modal">
+        <span class="close-btn" onclick="hideModal()"><img src="./img/closed.png" alt="fechar" width="30px"></span>
+        <img class="logo-modal" src="./img/logosite.png" alt="logosite" >
+        <h2 class="desc-modal">Bem-vindos a Pokedex Inicial, um site dedicado ao desenvolvimento de habilidades de programação web com HTML, CSS, JavaScript e alguns frameworks como Bootstrap. Explore os Pokémon iniciais de cada geração, de Kanto a Paldea. Clique na Pokebola para mais informações do Poke no pokémon DataBase e divirta-se compartilhando com amigos.    </h2>
+    </div>
+    
+    <div id="overlay" class="modal-overlay"></div>
+ 
+
+    <section class="todas-geracoes">
+
+        <section class="geracoes">
+            <section id="1ª Geração" class="subtitulo">
+                <h2 class="sub" style="color: #f12711;">Kanto: 1ª Geração</h2>
+            </section>
+            <div class="card-container">
+                <div class="card card-1">
+                    <div class="card-image">
+                        <img src="./img/charmander.png" alt="Charmander">
+                    </div>
+                    <div class="card-text">
+                        <span class="date1">Fogo</span>
+                        <h2><i class="fas fa-fire"></i> CHARMANDER</h2>
+                        <p>Tem preferência por coisas quentes. Quando chove, sai vapor da ponta da cauda.</p>
+                    </div>
+                    <div class="card-stats ">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.6 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/charmander" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div>Peso:</div>
+                            <div>8,5 KG</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-image">
+                        <img src="./img/bulbasaur.png" alt="Charmander">
+                    </div>
+                    <div class="card-text">
+                        <span class="date2">Grama / Venenoso</span>
+                        <h2><i class="fas fa-leaf"></i> BULBASAUR</h2>
+                        <p>Há uma semente de planta nas costas desde o dia em que este Pokémon nasceu.
+
+                        </p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.7 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/bulbasaur" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">6,9 KG</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-3">
+                    <div class="card-image">
+                        <img src="./img/squirtle.png" alt="Charmander">
+                    </div>
+                    <div class="card-text">
+                        <span class="date3">Água</span>
+                        <h2><i class="fas fa-tint"></i> SQUIRTLE</h2>
+                        <p>Quando retrai seu pescoço, ele esguicha água com muita força.</p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura</div>
+                            <div class="type">0.5 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/squirtle" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">9,0 KG</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="descricao">
+                <a href="#"><img class="img-1" src="./img/1geração.png" alt="primeira geração em uma só imagem"></a>
+                <div>
+                    <p class="info">
+                        Provavelmente o trio mais <span class="red">icônico </span> entre os jogadores mais velhos da
+                        franquia, <span style="color: #f5af19;">Charmander</span>, <span
+                            style="color: #1d8d36;">Bulbasaur</span> e <span style="color: #09077c;">Squirtle</span>
+                        marcaram época como os <span class="red">primeiros</span> Pokémons usados para explorar a região
+                        de <span class="red">Kanto</span>, ocasionando bastante nostalgia entre seus milhões de fãs no
+                        mundo inteiro. A Geração Kanto também contribuiu com os <span class="red">jogos Pokémon</span>, criando uma base bastante sólida.
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="geracoes">
+            <section class="subtitulo">
+                <h2 id="2ª Geração" style="color: #8ef519;">Johto: 2ª Geração</h2>
+            </section>
+            <div class="card-container">
+                <div class="card card-1">
+                    <div class="card-image">
+                        <img src="./img/cindaquil.png" alt="Charmander">
+                    </div>
+                    <div class="card-text">
+                        <span class="date1">Fogo</span>
+                        <h2><i class="fas fa-fire"></i> CINDAQUILL</h2>
+                        <p>Cyndaquil se defende aumentando suas chamas, que ficam fortes quando zangado e fracas quando
+                            cansado.</p>
+                    </div>
+                    <div class="card-stats ">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.5 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/cyndaquil" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div>Peso:</div>
+                            <div>7,9 KG</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-image">
+                        <img src=".//img/chicorita.png" alt="Charmander">
+                    </div>
+                    <div class="card-text">
+                        <span class="date2">Grama</span>
+                        <h2><i class="fas fa-leaf"></i> CHIKORITA</h2>
+                        <p>Na batalha, agita sua folha para afastar o adversário, mas também libera um cheirinho doce
+                            que acalma os Pokémon.
+
+                        </p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.9 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/chikorita" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">6,4 KG</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-3">
+                    <div class="card-image">
+                        <img src="./img/crocodyle.png" alt="Charmander">
+                    </div>
+                    <div class="card-text">
+                        <span class="date3">Água</span>
+                        <h2><i class="fas fa-tint"></i> TOTODILE</h2>
+                        <p>Apesar do corpo pequeno, as mandíbulas do Totodile são muito fortes.</p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura</div>
+                            <div class="type">0.6 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/totodile" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">9,5 KG</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="descricao">
+                <div>
+                    <p class="info">
+
+                        Para embarcar na aventura pela <span class="red">Liga Johto</span>, em Pokémon Gold & Silver, o
+                        treinador tinha que optar por um trio <span class="red">inédito:</span> <span
+                            style="color: #f5af19;">Cyndaquil</span>, <span style="color: #1d8d36;">Chikorita</span> e
+                        <span style="color: #09077c;">Totodile</span>. Esses Pokémons iniciais ofereciam aos treinadores
+                        uma <span class="red">nova gama</span> de estratégias enquanto exploravam as paisagens e
+                        desafios da região de <span class="red">Johto</span>, além de dar continuidade da narrativa, com <span class="red">conexões</span> com a Geração Kanto.
+                    </p>
+                </div>
+                <a href="#"><img class="img-1" src="./img/2geracao.png" alt="primeira geração em uma só imagem"></a>
+
+            </div>
+
+        </section>
+
+        <section class="geracoes">
+            <section id="3ª Geração" class="subtitulo">
+                <h2 class="sub" style="color: #00b4db;">Hoenn: 3ª Geração</h2>
+            </section>
+            <div class="card-container">
+                <div class="card card-1">
+                    <div class="card-image">
+                        <img src="./img/Torchic.png" alt="Torchic">
+                    </div>
+                    <div class="card-text">
+                        <span class="date1">Fogo</span>
+                        <h2><i class="fas fa-fire"></i> Torchic</h2>
+                        <p>Torchic emite chamas superiores a 1.800 graus, capazes de carbonizar adversários com bolas de
+                            fogo.</p>
+                    </div>
+                    <div class="card-stats ">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.4 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/torchic" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div>Peso:</div>
+                            <div>2,5 KG</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-image">
+                        <img src=".//img/Treecko.png" alt="Treecko">
+                    </div>
+                    <div class="card-text">
+                        <span class="date2">Grama</span>
+                        <h2><i class="fas fa-leaf"></i> Treecko</h2>
+                        <p>Treecko escala paredes com pequenos ganchos em seus pés e ataca golpeando adversários com sua
+                            cauda resistente.
+
+                        </p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.5 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/treecko" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">5,0 KG</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-3">
+                    <div class="card-image md">
+                        <img src=".//img/Mudkip.png" alt="mudkip" style="margin-bottom: 10px;">
+                    </div>
+                    <div class="card-text">
+                        <span class="date3">Água</span>
+                        <h2><i class="fas fa-tint"></i>Mudkip</h2>
+                        <p>A nadadeira na cabeça do Mudkip funciona como um radar sensível, sem depender dos olhos,
+                            através de movimentos de água e ar.</p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura</div>
+                            <div class="type">0.4 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/mudkip" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">7,6 KG</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="descricao">
+                <a href="#"><img class="img-1" src="./img/3geracao.png" alt="terceira geração em uma só imagem"></a>
+                <div>
+                    <p class="info"><span class="red">Hoenn</span> é a <span class="red">terceira geração</span> de
+                        Pokémon e engloba não somente as novas aventuras do anime mais também os jogos Ruby, Sapphire e Emerald. Ela marca a introdução dos <span
+                            class="red">Torneios Pokémons</span>, uma competição onde o Júri irá avaliar a beleza e a
+                        apresentação dos Pokémons participantes, <span class="red">popularizando</span> ainda mais as
+                        batalhas pokémon. Os iniciais da região são <span style="color: #f5af19;">Torchic</span>, <span
+                            style="color: #1d8d36;">Treecko</span> e <span style="color: #09077c;">Mudkip</span>. 
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="geracoes">
+            <section class="subtitulo">
+                <h2 id="4ª Geração" style="color: #f5af19;">Sinnoh: 4ª Geração
+                </h2>
+            </section>
+            <div class="card-container">
+                <div class="card card-1">
+                    <div class="card-image">
+                        <img src=".//img/Chimchar.png" alt="Chimchar" style="width: 200px;">
+                    </div>
+                    <div class="card-text">
+                        <span class="date1">Fogo</span>
+                        <h2><i class="fas fa-fire"></i>Chimchar</h2>
+                        <p>
+                            A parte de trás flamejante dele é alimentada por gás produzido em sua barriga. Nem mesmo a
+                            chuva consegue apagar o fogo.</p>
+                    </div>
+                    <div class="card-stats ">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.5 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/chimchar" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div>Peso:</div>
+                            <div>6,2 KG</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-image m4">
+                        <img src=".//img/Turtwig.png" alt="Turtwig">
+                    </div>
+                    <div class="card-text">
+                        <span class="date2">Grama</span>
+                        <h2><i class="fas fa-leaf"></i>Turtwig</h2>
+                        <p>
+                            A fotossíntese acontece por todo o corpo dele sob o sol. A carapaça em suas costas é, na
+                            verdade, solo endurecido.
+
+                        </p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.4 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/turtwig" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">10,2 KG</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-3">
+                    <div class="card-image">
+                        <img src="./img/Piplup.png" alt="Piplup" style="width: 220px;">
+                    </div>
+                    <div class="card-text">
+                        <span class="date3">Água</span>
+                        <h2><i class="fas fa-tint"></i>Piplup</h2>
+                        <p>
+                            Ele não gosta de ser cuidado. É difícil criar vínculo com ele, sendo bastante rebelde.</p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura</div>
+                            <div class="type">0.4 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/piplup" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">5,2 KG</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="descricao">
+                <div>
+                    <p class="info">Representada por <span class="red">novos pokémons</span> e pelos jogos icônicos da
+                        nintendo, essa geração marca a era de <span class="red">Sinnoh</span>.
+                        Os títulos Diamond, Pearl e Platinum marcaram a estreia da franquia de jogos no <span class="red">Nintendo DS</span>. Os Pokémon
+                        iniciais desta geração incluem: <span style="color: #f5af19;">Chimchar</span>, <span
+                            style="color: #1d8d36;">Turtwig</span> e <span style="color: #09077c;">Piplup</span>. Sinnoh se destaca por <span class="red">Pokémons lendários</span> como Dialga e Palkia, e a <span class="red">introdução</span> dos tipos <span class="red">Gelo e Aço</span>.
+                    </p>
+                </div>
+                <a href="#"><img class="img-1" src="./img/4geracao.png" alt="terceira geração em uma só imagem"></a>
+
+            </div>
+
+        </section>
+
+        <section class="geracoes">
+            <section class="subtitulo">
+                <h2 id="5ª Geração" style="color: #ff00ff;">Unova: 5ª Geração</h2>
+            </section>
+            <div class="card-container">
+                <div class="card card-1">
+                    <div class="card-image">
+                        <img src="./img/Tepig.png" alt="Tepig">
+                    </div>
+                    <div class="card-text">
+                        <span class="date1">Fogo</span>
+                        <h2><i class="fas fa-fire"></i>Tepig</h2>
+                        <p>Esquiva de ataques enquanto lança fogo pelo nariz. Ele assa frutas antes de comê-las.</p>
+                    </div>
+                    <div class="card-stats ">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.5 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/tepig" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div>Peso:</div>
+                            <div>9,9 KG</div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-image">
+                        <img src="./img/Snivy.png" alt="Snivy">
+                    </div>
+                    <div class="card-text">
+                        <span class="date2">Grama</span>
+                        <h2><i class="fas fa-leaf"></i>Snivy</h2>
+                        <p>Snivy realiza fotossíntese através de sua cauda e quanto mais luz ele absorve, mais rápido ele fica.
+    
+                        </p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.6 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/snivy" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">8,1 KG</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card card-3">
+                    <div class="card-image">
+                        <img src="./img/Oshawott.png" alt="Oshawott">
+                    </div>
+                    <div class="card-text">
+                        <span class="date3">Água</span>
+                        <h2><i class="fas fa-tint"></i>Oshawott</h2>
+                        <p>A concha em sua barriga não é usada apenas em batalhas, também pode ser usada para quebrar frutas duras.</p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura</div>
+                            <div class="type">0.5 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/oshawott" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">5,9 KG</div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+            <div class="descricao">
+                <a href="#"><img class="img-1" src="./img/5geracao.png" alt="primeira geração em uma só imagem"></a>
+                <div>
+                    <p class="info">
+                        Essa geração é marcada por <span style="color: #f5af19;">Tepig</span>, <span style="color: #1d8d36;">Snivy</span> e <span style="color: #09077c;">Oshawott</span>. Conhecida por sua <span class="red">diversidade geográfica</span>, desde metrópoles modernas até áreas rurais exuberantes. Introduzindo <span class="red">novas espécies de Pokémons</span> e inovações como as <span class="red">estações do ano</span>, Unova oferece uma experiência única aos treinadores, com desafios emocionantes e uma trama envolvente envolvendo a <a href="https://www.nintendoblast.com.br/2018/03/equipe-vila-team-plasma-blast.html" target="_blank" style="text-decoration: none;"><span class="red">Equipe Plasma</span></a>.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="geracoes">
+            <section id="6ª Geração" class="subtitulo">
+                <h2 class="sub" style="color: #1d8d36;">Kalos: 6ª Geração</h2>
+            </section>
+            <div class="card-container">
+                <div class="card card-1">
+                    <div class="card-image">
+                        <img src="./img/Fennekin.png" alt="Fennekin">
+                    </div>
+                    <div class="card-text">
+                        <span class="date1">Fogo</span>
+                        <h2><i class="fas fa-fire"></i>Fennekin</h2>
+                        <p>Comer um galho o enche de energia, e suas orelhas espaçosas dão vazão ao ar mais quente que 390 graus Fahrenheit.</p>
+                    </div>
+                    <div class="card-stats ">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.4 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/fennekin" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div>Peso:</div>
+                            <div>9,4 KG</div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-image">
+                        <img src="./img/Chespin.png" alt="Chespin">
+                    </div>
+                    <div class="card-text">
+                        <span class="date2">Grama</span>
+                        <h2><i class="fas fa-leaf"></i>Chespin</h2>
+                        <p>As plantas em sua cabeça são geralmente macias. Quando as flexiona, as pontas ficam tão duras e afiadas que podem perfurar rochas.
+    
+                        </p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.4 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/chespin" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">9,0 KG</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card card-3">
+                    <div class="card-image">
+                        <img src="./img/Froakie.png" alt="Froakie" style="width: 300px;">
+                    </div>
+                    <div class="card-text">
+                        <span class="date3">Água</span>
+                        <h2><i class="fas fa-tint"></i>Froakie</h2>
+                        <p>Ele gera bolhas flexíveis no peito e nas costas. As bolhas reduzem o dano que sofreria quando atacado.</p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura</div>
+                            <div class="type">0.3 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/froakie" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">7,0 KG</div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+            <div class="descricao">
+                <div>
+                    <p class="info">
+                         Kalos é um mundo repleto de <span class="red">beleza arquitetônica</span> e <span class="red">xvastos cenários</span>. Conhecida por seu ambiente inspirado na França, Kalos cativa os treinadores com <span class="red">cidades elegantes</span>, uma rica variedade de Pokémon e a intrigante <span class="red">Mega Evolução</span>. Embarque nesta jornada única, onde a estética refinada se encontra com <span class="red">desafios emocionantes</span>. Os inicias dessa geração são <span style="color: #f5af19;">Fennekin</span>, <span style="color: #1d8d36;">Chespin</span> e <span style="color: #09077c;">Froakie</span>.
+                    </p>
+                </div>
+                <a href="#"><img class="img-1" src="./img/6geracao.png" alt="primeira geração em uma só imagem"></a>
+
+            </div>
+
+        </section>
+
+        <section class="geracoes">
+            <section class="subtitulo">
+                <h2 id="7ª Geração" style="color: #0501ff;">Alola: 7ª Geração</h2>
+            </section>
+            <div class="card-container">
+                <div class="card card-1">
+                    <div class="card-image">
+                        <img style="width: 300px;" src="./img/Litten.png" alt="Litten">
+                    </div>
+                    <div class="card-text">
+                        <span class="date1">Fogo</span>
+                        <h2><i class="fas fa-fire"></i>Litten</h2>
+                        <p>Se você se esforçar demais para chegar perto dele, ele não se abrirá para você.</p>
+                    </div>
+                    <div class="card-stats ">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.4 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/litten" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div>Peso:</div>
+                            <div>4,3 KG</div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-image">
+                        <img style="width: 300px;" src="./img/Rowlett.png" alt="Rowlet">
+                    </div>
+                    <div class="card-text">
+                        <span class="date2">Grama / Voador</span>
+                        <h2><i class="fas fa-leaf"></i>Rowlet</h2>
+                        <p>Ele usa suas penas, que são afiadas como lâminas, voando no ataque ao adversário.
+    
+                        </p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.3 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/rowlet" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">1,5 KG</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card card-3">
+                    <div class="card-image">
+                        <img style="width: 300px;" src=".//img/Popplio.png" alt="Popplio">
+                    </div>
+                    <div class="card-text">
+                        <span class="date3">Água</span>
+                        <h2><i class="fas fa-tint"></i>Popplio</h2>
+                        <p>Os balões que ele infla com o nariz ficam cada vez maiores à medida que pratica todos os dias.</p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura</div>
+                            <div class="type">0.4 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/popplio" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">7,5 KG</div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+            <div class="descricao">
+                <a href="#"><img class="img-1" src="./img/7geracao.png" alt="primeira geração em uma só imagem"></a>
+                <div>
+                    <p class="info">
+                        
+                        <span class="red">Alola</span>, na 7ª geração de Pokémon, é um arquipélago tropical com quatro ilhas. Os treinadores enfrentam desafios de <span class="red">"Trial"</span>, descobrem <span class="red">Alolan Forms</span> e fortalecem vínculos antes da batalha contra a Liga Pokémon de Alola. O <span class="red">quadro inicial</span> dessa geração é composto por <span style="color: #f5af19;">Litten</span>, <span style="color: #1d8d36;">Rowlet</span> e <span style="color: #09077c;">Popplio</span>.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="geracoes">
+            <section class="subtitulo">
+                <h2 id="8ª Geração" style="color: #00f7ff;">Galar: 8ª Geração</h2>
+            </section>
+            <div class="card-container">
+                <div class="card card-1">
+                    <div class="card-image">
+                        <img style="width: 170px;" src="./img/Scorbunny.png" alt="Scorbunny">
+                    </div>
+                    <div class="card-text">
+                        <span class="date1">Fogo</span>
+                        <h2><i class="fas fa-fire"></i>Scorbunny</h2>
+                        <p>Um aquecimento de corrida faz com que a energia do fogo percorra o corpo deste Pokémon,o deixando pronto para batalha.</p>
+                    </div>
+                    <div class="card-stats ">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.3 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/scorbunny" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div>Peso:</div>
+                            <div>4,5 KG</div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-image">
+                        <img style="width: 330px;" src="./img/Grookey.png" alt="Grookey">
+                    </div>
+                    <div class="card-text">
+                        <span class="date2">Grama</span>
+                        <h2><i class="fas fa-leaf"></i>Grookey</h2>
+                        <p>Quando ele usa seu bastão especial para bater, as ondas sonoras produzidas transportam energia revitalizante para as plantas e flores da região.
+    
+                        </p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.3 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/grookey" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">5,0 KG</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card card-3">
+                    <div class="card-image">
+                        <img src="./img/Sobble.png" alt="Sobble">
+                    </div>
+                    <div class="card-text">
+                        <span class="date3">Água</span>
+                        <h2><i class="fas fa-tint"></i>Sobble</h2>
+                        <p>Quando assustado, este Pokémon chora e leva toda arena ao choro graças as suas lágrimas.</p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura</div>
+                            <div class="type">0.3 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/sobble" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">4,0 KG</div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+            <div class="descricao">
+                <div>
+                    <p class="info">
+                        <span style="color: #f5af19;">Scorbunny</span>, <span style="color: #1d8d36;">Grookey</span> e <span style="color: #09077c;">Sobble</span> compoem o quadro inicial de <span class="red">GALAR</span>, oitava geração de Pokémon. situada em um cenário inspirado no <span class="red">Reino Unido</span>. Os jogadores exploram cidades vibrantes, vastas áreas selvagens e enfrentam <span class="red">novos desafios</span> na Liga Pokémon local. A introdução de formas <span class="red">Dynamax</span> e <span class="red">Gigantamax</span> adiciona uma reviravolta estratégica às batalhas, tornando a jornada <span class="red">emocionante e inovadora</span>.
+                    </p>
+                </div>
+                <a href="#"><img class="img-1" src="./img/8geracao.png" alt="primeira geração em uma só imagem"></a>
+
+            </div>
+
+        </section>
+
+        <section class="geracoes">
+            <section id="9ª Geração" class="subtitulo">
+                <h2 class="sub" style="color: #00ff00;">Paldea: 9ª Geração
+                </h2>
+            </section>
+            <div class="card-container">
+                <div class="card card-1">
+                    <div class="card-image">
+                        <img style="width: 330px;" src="./img/Fuecoco.png" alt="Fuecoco">
+                    </div>
+                    <div class="card-text">
+                        <span class="date1">Fogo</span>
+                        <h2><i class="fas fa-fire"></i>Fuecoco</h2>
+                        <p>Encontra-se sobre rochas quentes e utiliza o calor absorvido pelas suas escamas quadradas para criar energia de fogo.</p>
+                    </div>
+                    <div class="card-stats ">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.4 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/fuecoco" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div>Peso:</div>
+                            <div>9,8 KG</div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-image">
+                        <img style="width: 330px;" src="./img/Sprigatito.png" alt="Sprigatito">
+                    </div>
+                    <div class="card-text">
+                        <span class="date2">Grama</span>
+                        <h2><i class="fas fa-leaf"></i>Sprigatito</h2>
+                        <p>Seu pelo fofo tem composição semelhante à das plantas. Este Pokémon lava frequentemente o rosto para evitar que resseque.
+    
+                        </p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura:</div>
+                            <div class="type">0.4 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/bulbasaur" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">4,1 KG</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card card-3">
+                    <div class="card-image">
+                        <img style="width: 330px;" src="./img/Quaxly.png" alt="Quaxly">
+                    </div>
+                    <div class="card-text">
+                        <span class="date3">Água</span>
+                        <h2><i class="fas fa-tint"></i>Quaxly</h2>
+                        <p>Este Pokémon migrou de terras distantes para Paldea há muito tempo. O gel secretado pelas penas repele a água e a sujeira.</p>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="value">Altura</div>
+                            <div class="type">0.5 M</div>
+                        </div>
+                        <div class="border">
+                            <a href="https://pokemondb.net/pokedex/quaxly" target="_blank"><img class="pokebola"
+                                    src="./img/pokebola.png" style="width: 42px;" alt="pokebola"></a>
+                        </div>
+                        <div class="stat">
+                            <div class="value">Peso:</div>
+                            <div class="type">6,1 KG</div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+            <div class="descricao">
+                <a href="#"><img class="img-1" src="./img/9geracao.png" alt="primeira geração em uma só imagem"></a>
+                <div>
+                    <p class="info">
+                        Em <span class="red">PALDEA</span>, <span style="color: #f5af19;">Fuecoco</span>, <span style="color: #1d8d36;">Sprigatito</span> e <span style="color: #09077c;">Quaxly</span> compõem o quadro de pokémons iniciais da última geração de pokémon. Essa <span class="red">geração mais recente</span> apresenta 
+                        uma região inspirada na <span class="red">península Ibérica</span>, apresentando vastas paisagens, desde <span class="red">planícies</span> e <span class="red">montanhas</span> até <span class="red">praias quentes</span> e <span class="red">cavernas geladas</span>, habitadas por uma <span class="red">diversidade</span> de Pokémon de diferentes tipos.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+      
+
+
+        <div class="social">
+          <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a href="#"><i class="fab fa-github fa-lg"></i></a>
+          <a href="#"><i class="fab fa-whatsapp fa-lg"></i></a>
+        </div>
+    
+
+
+
+
+
+
+</body>
+
+</html>
