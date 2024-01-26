@@ -119,6 +119,8 @@ body{
 }
 #s20{
     margin-left: 15px;
+    cursor: pointer;
+
 }
 .dropdown li:hover {
     background: #ffffff;
@@ -149,8 +151,8 @@ ul li:hover ul.dropdown {
 }
 .iframe-video{
     border-radius: 30px;
-    width: 1200px; 
-    height: 680px;
+    width: 800px; 
+    height: 500px;
 }
 .titulo{
     font-family: fontepokemon;
