@@ -21,7 +21,7 @@
         height: 450px;
     }
 }
-@media (max-width: 828px){
+@media (max-width: 814px){
     .titulo{
         font-size: 30px;  
     }
@@ -50,6 +50,12 @@
         width: 620px;
         height: 350px;
     }
+    }
+ @media (max-width: 628px){
+        .iframe-video{
+            width: 490px;
+            height: 260px;
+        } 
     }
 @media (max-width: 500px){
     .card{
