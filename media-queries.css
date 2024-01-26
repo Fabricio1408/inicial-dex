@@ -15,11 +15,6 @@
     #modeToggle{
         top: 230px;
     }
-    .iframe-video{
-
-        width: 800px; 
-        height: 450px;
-    }
 }
 @media (max-width: 814px){
     .titulo{
