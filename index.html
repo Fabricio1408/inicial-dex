@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./media-queries.css">
     <script src="./cod.js"></script>
     <title>Inicial Dex</title>
     <link rel="icon" href="./img/title.png" type="image/x-icon">
@@ -22,10 +23,10 @@
     <header class="topo">
         <div class="logo">
             <a href="./index.html"><img src="./img/logosite.png" alt="logosite" style="width: 160px"></a>
-            <ul >
+            <ul>
                 <li><a href="#">Início</a></li>
                 <li>
-                    <a id="s20" >Gerações▾</a>
+                    <a id="s20">Gerações▾</a>
                     <ul class="dropdown">
                         <li><a href="#1ª Geração" style="color: #f12711;">1ª Geração</a></li>
                         <li><a href="#2ª Geração" style="color: #8ef519;">2ª Geração</a></li>
@@ -51,18 +52,28 @@
         <h1>Pokémons iniciais de cada geração</h1>
     </aside>
 
+
     <img id="modeToggle" src="./img/dark.png" alt="Modo Noturno" onclick="toggleDarkMode()">
 
     <div id="modal" class="modal">
         <span class="close-btn" onclick="hideModal()"><img src="./img/closed.png" alt="fechar" width="30px"></span>
-        <img class="logo-modal" src="./img/logosite.png" alt="logosite" >
-        <h2 class="desc-modal">Bem-vindos a Pokedex Inicial, um site dedicado ao desenvolvimento de habilidades de programação web com HTML, CSS, JavaScript e alguns frameworks como Bootstrap. Explore os Pokémon iniciais de cada geração, de Kanto a Paldea. Clique na Pokebola para mais informações do Poke no pokémon DataBase e divirta-se compartilhando com amigos.    </h2>
+        <img class="logo-modal" src="./img/logosite.png" alt="logosite">
+        <h2 class="desc-modal">Bem-vindos a Pokedex Inicial, um site dedicado ao desenvolvimento de habilidades de
+            programação web com HTML, CSS, JavaScript e alguns frameworks como Bootstrap. Explore os Pokémon iniciais de
+            cada geração, de Kanto a Paldea. Clique na Pokebola para mais informações do Poke no pokémon DataBase e
+            divirta-se compartilhando com amigos. </h2>
     </div>
-    
+
     <div id="overlay" class="modal-overlay"></div>
- 
+
 
     <section class="todas-geracoes">
+
+
+        <iframe class="iframe-video" src="https://www.youtube.com/embed/GNFoz8Q9Tuo?si=5BI6Ck5ZFmswj37o"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
 
         <section class="geracoes">
             <section id="1ª Geração" class="subtitulo">
@@ -157,11 +168,12 @@
                             style="color: #1d8d36;">Bulbasaur</span> e <span style="color: #09077c;">Squirtle</span>
                         marcaram época como os <span class="red">primeiros</span> Pokémons usados para explorar a região
                         de <span class="red">Kanto</span>, ocasionando bastante nostalgia entre seus milhões de fãs no
-                        mundo inteiro. A Geração Kanto também contribuiu com os <span class="red">jogos Pokémon</span>, criando uma base bastante sólida.
+                        mundo inteiro. A Geração Kanto também contribuiu com os <span class="red">jogos Pokémon</span>,
+                        criando uma base bastante sólida.
                     </p>
                 </div>
             </div>
-            
+
         </section>
 
         <section class="geracoes">
@@ -259,7 +271,8 @@
                             style="color: #f5af19;">Cyndaquil</span>, <span style="color: #1d8d36;">Chikorita</span> e
                         <span style="color: #09077c;">Totodile</span>. Esses Pokémons iniciais ofereciam aos treinadores
                         uma <span class="red">nova gama</span> de estratégias enquanto exploravam as paisagens e
-                        desafios da região de <span class="red">Johto</span>, além de dar continuidade da narrativa, com <span class="red">conexões</span> com a Geração Kanto.
+                        desafios da região de <span class="red">Johto</span>, além de dar continuidade da narrativa, com
+                        <span class="red">conexões</span> com a Geração Kanto.
                     </p>
                 </div>
                 <a href="#"><img class="img-1" src="./img/2geracao.png" alt="primeira geração em uma só imagem"></a>
@@ -359,11 +372,12 @@
                 <a href="#"><img class="img-1" src="./img/3geracao.png" alt="terceira geração em uma só imagem"></a>
                 <div>
                     <p class="info"><span class="red">Hoenn</span> é a <span class="red">terceira geração</span> de
-                        Pokémon e engloba não somente as novas aventuras do anime mais também os jogos Ruby, Sapphire e Emerald. Ela marca a introdução dos <span
-                            class="red">Torneios Pokémons</span>, uma competição onde o Júri irá avaliar a beleza e a
+                        Pokémon e engloba não somente as novas aventuras do anime mais também os jogos Ruby, Sapphire e
+                        Emerald. Ela marca a introdução dos <span class="red">Torneios Pokémons</span>, uma competição
+                        onde o Júri irá avaliar a beleza e a
                         apresentação dos Pokémons participantes, <span class="red">popularizando</span> ainda mais as
                         batalhas pokémon. Os iniciais da região são <span style="color: #f5af19;">Torchic</span>, <span
-                            style="color: #1d8d36;">Treecko</span> e <span style="color: #09077c;">Mudkip</span>. 
+                            style="color: #1d8d36;">Treecko</span> e <span style="color: #09077c;">Mudkip</span>.
                     </p>
                 </div>
             </div>
@@ -464,9 +478,12 @@
                 <div>
                     <p class="info">Representada por <span class="red">novos pokémons</span> e pelos jogos icônicos da
                         nintendo, essa geração marca a era de <span class="red">Sinnoh</span>.
-                        Os títulos Diamond, Pearl e Platinum marcaram a estreia da franquia de jogos no <span class="red">Nintendo DS</span>. Os Pokémon
+                        Os títulos Diamond, Pearl e Platinum marcaram a estreia da franquia de jogos no <span
+                            class="red">Nintendo DS</span>. Os Pokémon
                         iniciais desta geração incluem: <span style="color: #f5af19;">Chimchar</span>, <span
-                            style="color: #1d8d36;">Turtwig</span> e <span style="color: #09077c;">Piplup</span>. Sinnoh se destaca por <span class="red">Pokémons lendários</span> como Dialga e Palkia, e a <span class="red">introdução</span> dos tipos <span class="red">Gelo e Aço</span>.
+                            style="color: #1d8d36;">Turtwig</span> e <span style="color: #09077c;">Piplup</span>. Sinnoh
+                        se destaca por <span class="red">Pokémons lendários</span> como Dialga e Palkia, e a <span
+                            class="red">introdução</span> dos tipos <span class="red">Gelo e Aço</span>.
                     </p>
                 </div>
                 <a href="#"><img class="img-1" src="./img/4geracao.png" alt="terceira geração em uma só imagem"></a>
@@ -502,7 +519,7 @@
                             <div>Peso:</div>
                             <div>9,9 KG</div>
                         </div>
-    
+
                     </div>
                 </div>
                 <div class="card card-2">
@@ -512,8 +529,9 @@
                     <div class="card-text">
                         <span class="date2">Grama</span>
                         <h2><i class="fas fa-leaf"></i>Snivy</h2>
-                        <p>Snivy realiza fotossíntese através de sua cauda e quanto mais luz ele absorve, mais rápido ele fica.
-    
+                        <p>Snivy realiza fotossíntese através de sua cauda e quanto mais luz ele absorve, mais rápido
+                            ele fica.
+
                         </p>
                     </div>
                     <div class="card-stats">
@@ -531,7 +549,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card card-3">
                     <div class="card-image">
                         <img src="./img/Oshawott.png" alt="Oshawott">
@@ -539,7 +557,8 @@
                     <div class="card-text">
                         <span class="date3">Água</span>
                         <h2><i class="fas fa-tint"></i>Oshawott</h2>
-                        <p>A concha em sua barriga não é usada apenas em batalhas, também pode ser usada para quebrar frutas duras.</p>
+                        <p>A concha em sua barriga não é usada apenas em batalhas, também pode ser usada para quebrar
+                            frutas duras.</p>
                     </div>
                     <div class="card-stats">
                         <div class="stat">
@@ -556,14 +575,21 @@
                         </div>
                     </div>
                 </div>
-    
-    
+
+
             </div>
             <div class="descricao">
                 <a href="#"><img class="img-1" src="./img/5geracao.png" alt="primeira geração em uma só imagem"></a>
                 <div>
                     <p class="info">
-                        Essa geração é marcada por <span style="color: #f5af19;">Tepig</span>, <span style="color: #1d8d36;">Snivy</span> e <span style="color: #09077c;">Oshawott</span>. Conhecida por sua <span class="red">diversidade geográfica</span>, desde metrópoles modernas até áreas rurais exuberantes. Introduzindo <span class="red">novas espécies de Pokémons</span> e inovações como as <span class="red">estações do ano</span>, Unova oferece uma experiência única aos treinadores, com desafios emocionantes e uma trama envolvente envolvendo a <a href="https://www.nintendoblast.com.br/2018/03/equipe-vila-team-plasma-blast.html" target="_blank" style="text-decoration: none;"><span class="red">Equipe Plasma</span></a>.
+                        Essa geração é marcada por <span style="color: #f5af19;">Tepig</span>, <span
+                            style="color: #1d8d36;">Snivy</span> e <span style="color: #09077c;">Oshawott</span>.
+                        Conhecida por sua <span class="red">diversidade geográfica</span>, desde metrópoles modernas até
+                        áreas rurais exuberantes. Introduzindo <span class="red">novas espécies de Pokémons</span> e
+                        inovações como as <span class="red">estações do ano</span>, Unova oferece uma experiência única
+                        aos treinadores, com desafios emocionantes e uma trama envolvente envolvendo a <a
+                            href="https://www.nintendoblast.com.br/2018/03/equipe-vila-team-plasma-blast.html"
+                            target="_blank" style="text-decoration: none;"><span class="red">Equipe Plasma</span></a>.
                     </p>
                 </div>
             </div>
@@ -582,7 +608,8 @@
                     <div class="card-text">
                         <span class="date1">Fogo</span>
                         <h2><i class="fas fa-fire"></i>Fennekin</h2>
-                        <p>Comer um galho o enche de energia, e suas orelhas espaçosas dão vazão ao ar mais quente que 390 graus Fahrenheit.</p>
+                        <p>Comer um galho o enche de energia, e suas orelhas espaçosas dão vazão ao ar mais quente que
+                            390 graus Fahrenheit.</p>
                     </div>
                     <div class="card-stats ">
                         <div class="stat">
@@ -597,7 +624,7 @@
                             <div>Peso:</div>
                             <div>9,4 KG</div>
                         </div>
-    
+
                     </div>
                 </div>
                 <div class="card card-2">
@@ -607,8 +634,9 @@
                     <div class="card-text">
                         <span class="date2">Grama</span>
                         <h2><i class="fas fa-leaf"></i>Chespin</h2>
-                        <p>As plantas em sua cabeça são geralmente macias. Quando as flexiona, as pontas ficam tão duras e afiadas que podem perfurar rochas.
-    
+                        <p>As plantas em sua cabeça são geralmente macias. Quando as flexiona, as pontas ficam tão duras
+                            e afiadas que podem perfurar rochas.
+
                         </p>
                     </div>
                     <div class="card-stats">
@@ -626,7 +654,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card card-3">
                     <div class="card-image">
                         <img src="./img/Froakie.png" alt="Froakie" style="width: 300px;">
@@ -634,7 +662,8 @@
                     <div class="card-text">
                         <span class="date3">Água</span>
                         <h2><i class="fas fa-tint"></i>Froakie</h2>
-                        <p>Ele gera bolhas flexíveis no peito e nas costas. As bolhas reduzem o dano que sofreria quando atacado.</p>
+                        <p>Ele gera bolhas flexíveis no peito e nas costas. As bolhas reduzem o dano que sofreria quando
+                            atacado.</p>
                     </div>
                     <div class="card-stats">
                         <div class="stat">
@@ -651,13 +680,19 @@
                         </div>
                     </div>
                 </div>
-    
-    
+
+
             </div>
             <div class="descricao">
                 <div>
                     <p class="info">
-                         Kalos é um mundo repleto de <span class="red">beleza arquitetônica</span> e <span class="red">xvastos cenários</span>. Conhecida por seu ambiente inspirado na França, Kalos cativa os treinadores com <span class="red">cidades elegantes</span>, uma rica variedade de Pokémon e a intrigante <span class="red">Mega Evolução</span>. Embarque nesta jornada única, onde a estética refinada se encontra com <span class="red">desafios emocionantes</span>. Os inicias dessa geração são <span style="color: #f5af19;">Fennekin</span>, <span style="color: #1d8d36;">Chespin</span> e <span style="color: #09077c;">Froakie</span>.
+                        Kalos é um mundo repleto de <span class="red">beleza arquitetônica</span> e <span
+                            class="red">xvastos cenários</span>. Conhecida por seu ambiente inspirado na França, Kalos
+                        cativa os treinadores com <span class="red">cidades elegantes</span>, uma rica variedade de
+                        Pokémon e a intrigante <span class="red">Mega Evolução</span>. Embarque nesta jornada única,
+                        onde a estética refinada se encontra com <span class="red">desafios emocionantes</span>. Os
+                        inicias dessa geração são <span style="color: #f5af19;">Fennekin</span>, <span
+                            style="color: #1d8d36;">Chespin</span> e <span style="color: #09077c;">Froakie</span>.
                     </p>
                 </div>
                 <a href="#"><img class="img-1" src="./img/6geracao.png" alt="primeira geração em uma só imagem"></a>
@@ -693,7 +728,7 @@
                             <div>Peso:</div>
                             <div>4,3 KG</div>
                         </div>
-    
+
                     </div>
                 </div>
                 <div class="card card-2">
@@ -704,7 +739,7 @@
                         <span class="date2">Grama / Voador</span>
                         <h2><i class="fas fa-leaf"></i>Rowlet</h2>
                         <p>Ele usa suas penas, que são afiadas como lâminas, voando no ataque ao adversário.
-    
+
                         </p>
                     </div>
                     <div class="card-stats">
@@ -722,7 +757,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card card-3">
                     <div class="card-image">
                         <img style="width: 300px;" src=".//img/Popplio.png" alt="Popplio">
@@ -730,7 +765,8 @@
                     <div class="card-text">
                         <span class="date3">Água</span>
                         <h2><i class="fas fa-tint"></i>Popplio</h2>
-                        <p>Os balões que ele infla com o nariz ficam cada vez maiores à medida que pratica todos os dias.</p>
+                        <p>Os balões que ele infla com o nariz ficam cada vez maiores à medida que pratica todos os
+                            dias.</p>
                     </div>
                     <div class="card-stats">
                         <div class="stat">
@@ -747,15 +783,20 @@
                         </div>
                     </div>
                 </div>
-    
-    
+
+
             </div>
             <div class="descricao">
                 <a href="#"><img class="img-1" src="./img/7geracao.png" alt="primeira geração em uma só imagem"></a>
                 <div>
                     <p class="info">
-                        
-                        <span class="red">Alola</span>, na 7ª geração de Pokémon, é um arquipélago tropical com quatro ilhas. Os treinadores enfrentam desafios de <span class="red">"Trial"</span>, descobrem <span class="red">Alolan Forms</span> e fortalecem vínculos antes da batalha contra a Liga Pokémon de Alola. O <span class="red">quadro inicial</span> dessa geração é composto por <span style="color: #f5af19;">Litten</span>, <span style="color: #1d8d36;">Rowlet</span> e <span style="color: #09077c;">Popplio</span>.
+
+                        <span class="red">Alola</span>, na 7ª geração de Pokémon, é um arquipélago tropical com quatro
+                        ilhas. Os treinadores enfrentam desafios de <span class="red">"Trial"</span>, descobrem <span
+                            class="red">Alolan Forms</span> e fortalecem vínculos antes da batalha contra a Liga Pokémon
+                        de Alola. O <span class="red">quadro inicial</span> dessa geração é composto por <span
+                            style="color: #f5af19;">Litten</span>, <span style="color: #1d8d36;">Rowlet</span> e <span
+                            style="color: #09077c;">Popplio</span>.
                     </p>
                 </div>
             </div>
@@ -774,7 +815,8 @@
                     <div class="card-text">
                         <span class="date1">Fogo</span>
                         <h2><i class="fas fa-fire"></i>Scorbunny</h2>
-                        <p>Um aquecimento de corrida faz com que a energia do fogo percorra o corpo deste Pokémon,o deixando pronto para batalha.</p>
+                        <p>Um aquecimento de corrida faz com que a energia do fogo percorra o corpo deste Pokémon,o
+                            deixando pronto para batalha.</p>
                     </div>
                     <div class="card-stats ">
                         <div class="stat">
@@ -789,7 +831,7 @@
                             <div>Peso:</div>
                             <div>4,5 KG</div>
                         </div>
-    
+
                     </div>
                 </div>
                 <div class="card card-2">
@@ -799,8 +841,9 @@
                     <div class="card-text">
                         <span class="date2">Grama</span>
                         <h2><i class="fas fa-leaf"></i>Grookey</h2>
-                        <p>Quando ele usa seu bastão especial para bater, as ondas sonoras produzidas transportam energia revitalizante para as plantas e flores da região.
-    
+                        <p>Quando ele usa seu bastão especial para bater, as ondas sonoras produzidas transportam
+                            energia revitalizante para as plantas e flores da região.
+
                         </p>
                     </div>
                     <div class="card-stats">
@@ -818,7 +861,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card card-3">
                     <div class="card-image">
                         <img src="./img/Sobble.png" alt="Sobble">
@@ -843,13 +886,20 @@
                         </div>
                     </div>
                 </div>
-    
-    
+
+
             </div>
             <div class="descricao">
                 <div>
                     <p class="info">
-                        <span style="color: #f5af19;">Scorbunny</span>, <span style="color: #1d8d36;">Grookey</span> e <span style="color: #09077c;">Sobble</span> compoem o quadro inicial de <span class="red">GALAR</span>, oitava geração de Pokémon. situada em um cenário inspirado no <span class="red">Reino Unido</span>. Os jogadores exploram cidades vibrantes, vastas áreas selvagens e enfrentam <span class="red">novos desafios</span> na Liga Pokémon local. A introdução de formas <span class="red">Dynamax</span> e <span class="red">Gigantamax</span> adiciona uma reviravolta estratégica às batalhas, tornando a jornada <span class="red">emocionante e inovadora</span>.
+                        <span style="color: #f5af19;">Scorbunny</span>, <span style="color: #1d8d36;">Grookey</span> e
+                        <span style="color: #09077c;">Sobble</span> compoem o quadro inicial de <span
+                            class="red">GALAR</span>, oitava geração de Pokémon. situada em um cenário inspirado no
+                        <span class="red">Reino Unido</span>. Os jogadores exploram cidades vibrantes, vastas áreas
+                        selvagens e enfrentam <span class="red">novos desafios</span> na Liga Pokémon local. A
+                        introdução de formas <span class="red">Dynamax</span> e <span class="red">Gigantamax</span>
+                        adiciona uma reviravolta estratégica às batalhas, tornando a jornada <span
+                            class="red">emocionante e inovadora</span>.
                     </p>
                 </div>
                 <a href="#"><img class="img-1" src="./img/8geracao.png" alt="primeira geração em uma só imagem"></a>
@@ -871,7 +921,8 @@
                     <div class="card-text">
                         <span class="date1">Fogo</span>
                         <h2><i class="fas fa-fire"></i>Fuecoco</h2>
-                        <p>Encontra-se sobre rochas quentes e utiliza o calor absorvido pelas suas escamas quadradas para criar energia de fogo.</p>
+                        <p>Encontra-se sobre rochas quentes e utiliza o calor absorvido pelas suas escamas quadradas
+                            para criar energia de fogo.</p>
                     </div>
                     <div class="card-stats ">
                         <div class="stat">
@@ -886,7 +937,7 @@
                             <div>Peso:</div>
                             <div>9,8 KG</div>
                         </div>
-    
+
                     </div>
                 </div>
                 <div class="card card-2">
@@ -896,8 +947,9 @@
                     <div class="card-text">
                         <span class="date2">Grama</span>
                         <h2><i class="fas fa-leaf"></i>Sprigatito</h2>
-                        <p>Seu pelo fofo tem composição semelhante à das plantas. Este Pokémon lava frequentemente o rosto para evitar que resseque.
-    
+                        <p>Seu pelo fofo tem composição semelhante à das plantas. Este Pokémon lava frequentemente o
+                            rosto para evitar que resseque.
+
                         </p>
                     </div>
                     <div class="card-stats">
@@ -915,7 +967,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card card-3">
                     <div class="card-image">
                         <img style="width: 330px;" src="./img/Quaxly.png" alt="Quaxly">
@@ -923,7 +975,8 @@
                     <div class="card-text">
                         <span class="date3">Água</span>
                         <h2><i class="fas fa-tint"></i>Quaxly</h2>
-                        <p>Este Pokémon migrou de terras distantes para Paldea há muito tempo. O gel secretado pelas penas repele a água e a sujeira.</p>
+                        <p>Este Pokémon migrou de terras distantes para Paldea há muito tempo. O gel secretado pelas
+                            penas repele a água e a sujeira.</p>
                     </div>
                     <div class="card-stats">
                         <div class="stat">
@@ -940,15 +993,21 @@
                         </div>
                     </div>
                 </div>
-    
-    
+
+
             </div>
             <div class="descricao">
                 <a href="#"><img class="img-1" src="./img/9geracao.png" alt="primeira geração em uma só imagem"></a>
                 <div>
                     <p class="info">
-                        Em <span class="red">PALDEA</span>, <span style="color: #f5af19;">Fuecoco</span>, <span style="color: #1d8d36;">Sprigatito</span> e <span style="color: #09077c;">Quaxly</span> compõem o quadro de pokémons iniciais da última geração de pokémon. Essa <span class="red">geração mais recente</span> apresenta 
-                        uma região inspirada na <span class="red">península Ibérica</span>, apresentando vastas paisagens, desde <span class="red">planícies</span> e <span class="red">montanhas</span> até <span class="red">praias quentes</span> e <span class="red">cavernas geladas</span>, habitadas por uma <span class="red">diversidade</span> de Pokémon de diferentes tipos.
+                        Em <span class="red">PALDEA</span>, <span style="color: #f5af19;">Fuecoco</span>, <span
+                            style="color: #1d8d36;">Sprigatito</span> e <span style="color: #09077c;">Quaxly</span>
+                        compõem o quadro de pokémons iniciais da última geração de pokémon. Essa <span
+                            class="red">geração mais recente</span> apresenta
+                        uma região inspirada na <span class="red">península Ibérica</span>, apresentando vastas
+                        paisagens, desde <span class="red">planícies</span> e <span class="red">montanhas</span> até
+                        <span class="red">praias quentes</span> e <span class="red">cavernas geladas</span>, habitadas
+                        por uma <span class="red">diversidade</span> de Pokémon de diferentes tipos.
                     </p>
                 </div>
             </div>
@@ -956,15 +1015,15 @@
         </section>
 
     </section>
-      
 
 
-        <div class="social">
-          <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
-          <a href="#"><i class="fab fa-github fa-lg"></i></a>
-          <a href="#"><i class="fab fa-whatsapp fa-lg"></i></a>
-        </div>
-    
+
+    <div class="social">
+        <a href="https://www.linkedin.com/in/fabricio-da-silva-ribeiro-8b5a12206/" target="_blank"><i
+                class="fab fa-linkedin fa-lg"></i></a>
+        <a href="https://github.com/Fabricio1408" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+    </div>
+
 
 
 
